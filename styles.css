@@ -1,0 +1,106 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body styling */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #6e7b8a, #4a5362);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Calculator styling */
+  .calculator {
+    background: linear-gradient(135deg, #4a5362, #6e7b8a);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    text-align: center;
+  }
+  
+  /* Display screen */
+  .display {
+    margin-bottom: 20px;
+  }
+  
+  #screen {
+    width: 100%;
+    height: 60px;
+    font-size: 2rem;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    letter-spacing: 2px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    min-height: 60px;
+  }
+  
+  /* Button styling */
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+  }
+  
+  .btn {
+    background-color: #fff;
+    font-size: 1.5rem;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btn:hover {
+    background-color: #ff6f61;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .btn:active {
+    background-color: #e74c3c;
+    color: white;
+    transform: translateY(2px);
+  }
+  
+  #clear {
+    background-color: #e74c3c;
+    color: white;
+  }
+  
+  #clear:hover {
+    background-color: #c0392b;
+  }
+  
+  #clear:active {
+    background-color: #e74c3c;
+    transform: translateY(2px);
+  }
+  
+  /* Special Button Styles */
+  button {
+    font-weight: bold;
+  }
+  
+  /* Subtle button animations */
+  .btn {
+    transition: transform 0.1s ease-in-out, background-color 0.3s ease;
+  }
+  
